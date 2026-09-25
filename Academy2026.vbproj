@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E561FEE-96EB-491E-8B39-CEA96748F445}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Academy2026.My.MyApplication</StartupObject>
+    <RootNamespace>Academy2026</RootNamespace>
+    <AssemblyName>Academy2026</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Academy2026.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Academy2026.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppConstants.vb" />
+    <Compile Include="AppSettingsStore.vb" />
+    <Compile Include="AuditService.vb" />
+    <Compile Include="DashboardService.vb" />
+    <Compile Include="DelinquencyService.vb" />
+    <Compile Include="DropdownService.vb" />
+    <Compile Include="EncryptedBackupService.vb" />
+    <Compile Include="ExpenseService.vb" />
+    <Compile Include="frmAuditLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDelinquency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPasswordPrompt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPickPlayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlayers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlayers.Designer.vb">
+      <DependentUpon>frmPlayers.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSecureBackup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectColumns.Designer.vb">
+      <DependentUpon>frmSelectColumns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectColumns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayments.Designer.vb">
+      <DependentUpon>frmPayments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRevenueReport.Designer.vb">
+      <DependentUpon>frmRevenueReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRevenueReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBulkExpense.Designer.vb">
+      <DependentUpon>frmBulkExpense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBulkExpense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBulkPayment.Designer.vb">
+      <DependentUpon>frmBulkPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBulkPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExpenses.Designer.vb">
+      <DependentUpon>frmExpenses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExpenses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExpensesReport.Designer.vb">
+      <DependentUpon>frmExpensesReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExpensesReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.vb">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridHelper.vb" />
+    <Compile Include="IdleLockManager.vb" />
+    <Compile Include="LicenseManager.vb" />
+    <Compile Include="DatabaseModule.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PaymentService.vb" />
+    <Compile Include="PlayerService.vb" />
+    <Compile Include="PrintHelper.vb" />
+    <Compile Include="ReportExporter.vb" />
+    <Compile Include="UserService.vb" />
+    <Compile Include="UserSession.vb" />
+    <Compile Include="UtilityModule.vb" />
+    <Compile Include="ValidationModule.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAuditLog.resx">
+      <DependentUpon>frmAuditLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlayers.resx">
+      <DependentUpon>frmPlayers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSecureBackup.resx">
+      <DependentUpon>frmSecureBackup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectColumns.resx">
+      <DependentUpon>frmSelectColumns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayments.resx">
+      <DependentUpon>frmPayments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRevenueReport.resx">
+      <DependentUpon>frmRevenueReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBulkExpense.resx">
+      <DependentUpon>frmBulkExpense.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBulkPayment.resx">
+      <DependentUpon>frmBulkPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExpenses.resx">
+      <DependentUpon>frmExpenses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExpensesReport.resx">
+      <DependentUpon>frmExpensesReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageUsers.resx">
+      <DependentUpon>frmManageUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+</Project>

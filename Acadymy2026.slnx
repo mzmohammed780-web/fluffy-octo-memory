@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../Acadymy2026Setup/Acadymy2026Setup.vdproj" Type="Installer">
+    <Build />
+  </Project>
+  <Project Path="Acadymy2026.vbproj" Id="8e561fee-96eb-491e-8b39-cea96748f445" />
+</Solution>
